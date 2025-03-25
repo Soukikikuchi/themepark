@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ファンタジーパーク - 夢と冒険の遊園地</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="ファンタジーパーク">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#"><i class="fas fa-ticket-alt"></i> 料金・チケット</a></li>
+                    <li><a href="#"><i class="far fa-clock"></i> 営業時間・カレンダー</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> 交通アクセス</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> アトラクション</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> イベント</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> レストラン・ショップ</a></li>
+                    <li><a href="#"><i class="fas fa-map"></i> 園内マップ</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ファーストビュー（動画） -->
+    <section class="hero">
+        <div class="video-container">
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="assets/videos/amusement_park.mp4" type="video/mp4">
+                お使いのブラウザは動画再生に対応していません。
+            </video>
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>ファンタジーパークへ<br>ようこそ</h1>
+                <p>夢と冒険があなたを待っています</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 本日の運行状況と営業時間 -->
+    <section class="operation-status">
+        <div class="container">
+            <div class="status-box">
+                <div class="today-hours">
+                    <h3>本日の営業時間</h3>
+                    <p class="time">9:00 - 21:00</p>
+                </div>
+                <div class="attraction-status">
+                    <h3>アトラクション運行状況</h3>
+                    <a href="#" class="status-link">リアルタイム状況を確認</a>
+                </div>
+                <div class="weather">
+                    <h3>本日の天気</h3>
+                    <div class="weather-icon">
+                        <i class="fas fa-sun"></i>
+                        <span>晴れ 23℃</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- イベント情報 -->
+    <section class="events">
+        <div class="container">
+            <h2 class="section-title">イベント情報</h2>
+            <div class="event-slider">
+                <div class="event-card">
+                    <img src="assets/images/event1.jpg" alt="春のフラワーフェスティバル">
+                    <div class="event-info">
+                        <h3>春のフラワーフェスティバル</h3>
+                        <p class="date">2025年3月20日〜4月10日</p>
+                        <p class="description">色とりどりの花々が園内を彩ります。特別なフォトスポットも登場！</p>
+                        <a href="#" class="more-info">詳細はこちら</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="assets/images/event2.jpg" alt="ナイトパレード">
+                    <div class="event-info">
+                        <h3>ナイトパレード「スターライトファンタジー」</h3>
+                        <p class="date">毎日開催 19:30〜</p>
+                        <p class="description">光と音楽が織りなす幻想的なパレードをお楽しみください。</p>
+                        <a href="#" class="more-info">詳細はこちら</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="assets/images/event3.jpg" alt="キャラクターショー">
+                    <div class="event-info">
+                        <h3>キャラクターショー「ドリームアドベンチャー」</h3>
+                        <p class="date">土日祝日 11:00〜、15:00〜</p>
+                        <p class="description">人気キャラクターたちによる楽しいショーをお届けします。</p>
+                        <a href="#" class="more-info">詳細はこちら</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-events">
+                <a href="#" class="btn">イベント一覧はこちら</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- おすすめアトラクション -->
+    <section class="recommended-attractions">
+        <div class="container">
+            <h2 class="section-title">おすすめアトラクション</h2>
+            <div class="attractions-grid">
+                <div class="attraction-item">
+                    <img src="assets/images/attraction1.jpg" alt="ジェットコースター">
+                    <h3>スーパーサンダーコースター</h3>
+                    <p>最高速度120km/hの絶叫マシン！</p>
+                    <div class="waiting-time">
+                        <span>待ち時間：約40分</span>
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <img src="assets/images/attraction2.jpg" alt="観覧車">
+                    <h3>スカイホイール</h3>
+                    <p>高さ80mから見る景色は圧巻！</p>
+                    <div class="waiting-time">
+                        <span>待ち時間：約15分</span>
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <img src="assets/images/attraction3.jpg" alt="ウォーターライド">
+                    <h3>スプラッシュアドベンチャー</h3>
+                    <p>水しぶきと急流が楽しいライド！</p>
+                    <div class="waiting-time">
+                        <span>待ち時間：約30分</span>
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <img src="assets/images/attraction4.jpg" alt="お化け屋敷">
+                    <h3>ホーンテッドマンション</h3>
+                    <p>恐怖が待ち受ける館内を探検しよう！</p>
+                    <div class="waiting-time">
+                        <span>待ち時間：約25分</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- チケット情報 -->
+    <section class="ticket-info">
+        <div class="container">
+            <h2 class="section-title">チケット情報</h2>
+            <div class="ticket-types">
+                <div class="ticket-card">
+                    <h3>1日パスポート</h3>
+                    <p class="price">大人 ¥7,800</p>
+                    <p class="price">子供 ¥5,500</p>
+                    <p class="description">すべてのアトラクションに乗り放題！</p>
+                    <a href="#" class="btn">購入する</a>
+                </div>
+                <div class="ticket-card">
+                    <h3>アフター5パスポート</h3>
+                    <p class="price">大人 ¥4,500</p>
+                    <p class="price">子供 ¥3,200</p>
+                    <p class="description">17時以降の入園に最適！</p>
+                    <a href="#" class="btn">購入する</a>
+                </div>
+                <div class="ticket-card">
+                    <h3>年間パスポート</h3>
+                    <p class="price">大人 ¥29,800</p>
+                    <p class="price">子供 ¥19,800</p>
+                    <p class="description">1年間何度でも入園可能！</p>
+                    <a href="#" class="btn">購入する</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="ファンタジーパーク">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>ご利用案内</h4>
+                        <ul>
+                            <li><a href="#">料金・チケット</a></li>
+                            <li><a href="#">営業時間・カレンダー</a></li>
+                            <li><a href="#">交通アクセス</a></li>
+                            <li><a href="#">園内マップ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>アトラクション・イベント</h4>
+                        <ul>
+                            <li><a href="#">アトラクション一覧</a></li>
+                            <li><a href="#">イベント情報</a></li>
+                            <li><a href="#">ショー情報</a></li>
+                            <li><a href="#">レストラン・ショップ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>お問い合わせ</h4>
+                        <ul>
+                            <li><a href="#">よくある質問</a></li>
+                            <li><a href="#">お問い合わせフォーム</a></li>
+                            <li><a href="#">団体でのご利用</a></li>
+                            <li><a href="#">採用情報</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ファンタジーパーク All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
